@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container {
+                margin-top: 100px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: lightgray;
+                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.855);
+            }
+            .flexbox {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .flexbox p {
+                font-weight: 300;
+                padding-left: 10px;
+            }
+
+            .flexbox button {
+           
+                width: 40px;
+                height: 20px;
+                margin-right: 20px;
+                background-color: rgb(53, 151, 255);
+                color: white;
+                border: none;
+                font-weight: bold;
+                border-radius: 40px;
+            }
+
+            .cat-container {
+                width: 350px;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                font-family: Arial;
+            }
+
+            .cat-container p {
+                margin-top: 0px;
+                margin-bottom: 5px;
+            }
+            .cat-pic {
+                width: 70px;
+                height: 70px;
+                border-radius: 40px;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .cat-info {
+              flex: 1;
+              padding-left: 15px;
+            }
+
+            .cat-name {
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            .cat-desc {
+                font-size: 14px;
+                color: gray;
+            }
+
+            .cat-pop {
+                font-size: 12px;
+                color: gray;
+            }
+
+            .cat-button {
+                background-color: rgb(67, 158, 255);
+                color: white;
+                font-weight: bold;
+                border: none;
+                border-radius: 4px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-right: 12px;
+                padding-left: 12px;
+                cursor: pointer;
+            }
+
+            .search-container {
+                margin-top: 200px;
+                margin-bottom: 200px;
+                background-color: rgb(112, 54, 112);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 12px;
+                padding-top: 12px;
+            }
+
+            .left-home {
+                color: white;
+                padding-left: 20px;
+            }
+
+            .search-button {
+                width: 500px;
+                border-radius: 200px;
+                border: none;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 12px;
+                
+            }
+
+            .right-download {
+                color: white;
+                margin-right: 8px;
+                background-color: rgb(112, 54, 112); 
+                border-style: solid;
+                border-color: white;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 16px;
+                padding-right: 16px;        
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div style="
+            display: flex;
+            flex-direction: row;"
+            >
+            <div style="width: 200px; background-color: lightblue;">200px</div>
+            <div style="width: 75px; background-color: lightpink;">75px</div>
+        </div>
+
+        <div style="
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;"
+        >
+        <div style="width: 50px; background-color: lightblue;">50px</div>
+        <div style="flex: 1; background-color: lightpink;">flex: 1</div>
+        <div style="width: 75px; background-color: lightblue;">75px</div>
+    </div>
+
+    <div style="
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    height: 50px;
+    border: 1px;
+    border-style: solid;
+    justify-content: space-between;
+    align-items: center;"
+    >
+    <div style="width: 50px; background-color: lightblue;">item1</div>
+    <div style="width: 50px; background-color: lightpink;">item2</div>
+</div>
+
+    <div class="container">
+        <div class="flexbox">
+            <p style="flex: 2">Home</p>
+            <button>14</button>
+        </div>
+        <div class="flexbox">
+            <p style="flex: 2">Notifcations</p>
+            <button>3</button>
+        </div>
+        <div class="flexbox">
+            <p style="flex: 2">Messages</p>
+            <button>5</button>
+        </div>
+    </div>
+
+    <div class="cat-container">
+        <img class="cat-pic" src="thumbnails/cat-2.jpg">
+        <div class="cat-info">
+            <p class="cat-name">Oliver</p>
+            <p class="cat-desc">the Cat</p>
+            <p class="cat-pop">Popular</p>
+        </div>
+        <button class="cat-button">Follow</button>
+    </div>
+
+    <div class="search-container">
+        <div class="left-home">Home</div>
+        <input class="search-button" placeholder="Search">
+        <button class="right-download">Download</button>
+    </div>
+
+    </body>
+    
+    </html>
