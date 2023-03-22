@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .flex-1 {
+                display: flex;
+                flex-direction: row;
+                height: 50px;
+                margin-bottom: 100px;
+            }
+
+            .column1 {
+                background-color: pink;
+                width: 100px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .item-2 {
+                width: 200px;
+                background-color: blue;
+            }
+
+
+            .flexbox {
+                display: flex;
+                flex-direction: row;
+                height: 50px;
+                margin-bottom: 100px;
+            }
+
+            .column-1 {
+                background-color: pink;
+                width: 100px;
+            }
+
+            .column-2 {
+                background-color: blue;
+                width: 200px;
+                
+            }
+
+            .row2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .container {
+                width: 600px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(222, 222, 222);
+            }
+
+            .inbox {
+                color: gray;
+                padding-left: 10px;
+                padding-top: 10px;
+            }
+
+            .flexbox-container { 
+                flex: 1;
+            }
+
+            .cat-profile {
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                object-fit: cover;
+                object-position: center;
+               
+            }
+
+            .cat-header {
+                margin-left: 8px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .cat-info p {
+                margin-top: 0px;
+                margin-bottom: 2px;
+                font-family: Arial;
+            }
+
+            .cat-title {
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+            .cat-desc {
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            .cat-message {
+                font-size: 14px;
+                color: gray;
+            }
+
+            .time-sent {
+                color: gray;
+                align-content: top;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-1">
+        <div class="column1">
+            <div class="item-1">item1</div>
+        </div>
+        <div class="item-2"></div>
+    </div>
+
+    <div class="flexbox">
+        <div class="column-1">            
+        </div>
+        <div class="column-2">
+            <div>row1</div>
+            <div class="row2">
+                <div class="row2-item">row2</div>
+                <div class="row2-item">row2</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="inbox">All Inboxes</div>
+        <div>
+            <div>
+            <img class="cat-profile" src="thumbnails/cat-2.jpg">
+            </div>
+        <div class="flexbox-container">
+            <div class="cat-header">
+                <p class="cat-title">Chewy Promotions</p>
+                <div class="time-sent">4:58 PM</div>
+            </div>
+            <p class="cat-desc">Biggest sales of the year!</p>
+            <p class="cat-message">Hey there! We're writing to tell you about our ...</p>
+            
+        </div>
+        </div>
+    </div>
+    </body>
+</html>
